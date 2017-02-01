@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MIR TM</string>
+
+
+    <string-array name="spinner_list_item_array">
+        <item>RU</item>
+        <item>TM</item>
+        <item>EN</item>
+    </string-array>
+
+</resources>

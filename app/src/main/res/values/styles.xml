@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">#ffffff</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="AppTheme.TabStyle">
+        <item name="android:itemBackground" state_selected="true">@drawable/tab_back</item>
+
+
+
+    </style>
+
+</resources>
