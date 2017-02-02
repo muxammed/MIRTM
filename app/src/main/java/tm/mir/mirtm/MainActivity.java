@@ -68,7 +68,13 @@ public class MainActivity extends AppCompatActivity {
         vpPager.setAdapter(adapterViewPager);
 
 
+
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+
+        bottomNavigationView.getMenu().getItem(0).setChecked(false);
+        vpPager.setCurrentItem(2);
+        bottomNavigationView.getMenu().getItem(2).setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -108,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else
             {
-                bottomNavigationView.getMenu().getItem(0).setChecked(false);
+                bottomNavigationView.getMenu().getItem(2).setChecked(false);
             }
             Log.d("page", "onPageSelected: "+position);
             bottomNavigationView.getMenu().getItem(position).setChecked(true);

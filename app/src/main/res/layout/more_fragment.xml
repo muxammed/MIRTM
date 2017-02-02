@@ -2,12 +2,155 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+                android:background="@color/colorWhite">
 
-    <TextView
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="this is more"
-    />
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        <LinearLayout
+
+                android:id="@+id/my_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_btn_back"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+
+                android:clickable="true">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:padding="3dp"
+                    android:src="@mipmap/convert" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorAboutText"
+                    android:text="Обратная связь" android:id="@+id/textView2"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+                android:id="@+id/my_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_btn_back"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+
+                android:clickable="true">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="3dp"
+                    android:src="@mipmap/zvezda" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorAboutText"
+                    android:text="Оценить приложение" />
+
+        </LinearLayout>
+        <LinearLayout
+
+                android:id="@+id/my_button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_btn_back"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:clickable="true">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:adjustViewBounds="true"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/mir" android:id="@+id/imageView"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorAboutText"
+                    android:text="О приложении" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:layout_weight="1">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кэш карт"
+                android:textColor="@color/colorAboutText2"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+        />
+        <LinearLayout
+
+                android:id="@+id/my_button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_btn_back"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:clickable="true">
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorAboutText"
+                    android:text="Очистить кэш (2,6 mb)" android:id="@+id/textView"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+    </LinearLayout>
 
 </LinearLayout>
